@@ -12,7 +12,7 @@ $	sudo apt-get install unzip
 ```
 在跑`$ 	sudo apt-get install openjdk-7-jdk` 这句代码时，出现了报错	 
 错误信息：  
-![fig1](https://github.com/liaoyaoya/ES2016_14353173/tree/master/img/fig1.png)   
+![fig1](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig1.png)   
 解决方法：因为Ubuntu16.04的安装源中已经默认没有openjdk-7了，所以需要我们自己手动添加到仓库中
 ```
 $	sudo add-apt-repository ppa:openjdk-r/ppa
@@ -41,7 +41,7 @@ sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip
 `$	../configure CXX=g++ --disable-async-updates`
 
     运行后出来得到截图如下，无误后就可以继续往下了：  
-![fig2](https://github.com/liaoyaoya/ES2016_14353173/tree/master/img/fig2.png)
+![fig2]https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig2.png)
 
 4. 编译  
 		`$	sudo make install`
@@ -50,11 +50,11 @@ sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip
 		`$	ls`
 		
     得到的文件目录如下：  
-![fig3](https://github.com/liaoyaoya/ES2016_14353173/tree/master/img/fig3.png)
+![fig3](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig3.png)
 
 6. 记录下当前的（输出的）工作路径，待会会用到  
 		`$	pwd`  
-![fig4](https://github.com/liaoyaoya/ES2016_14353173/tree/master/img/fig4.png)  
+![fig4](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig4.png)  
 由上图可知我当前的工作路径为:  
 `/home/liaoyaoya/systemc-2.3.1`
 
@@ -64,21 +64,21 @@ sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip
 遇到的问题：build_zip.xml文件不让修改，无法保存修改的东西  
 解决：`$	sudo gedit build_zip.xml`  
 修改如下：  
-![fig5](https://github.com/liaoyaoya/ES2016_14353173/tree/master/img/fig5.PNG)
+![fig5](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig5.PNG)
 3. 编译`$	ant -f build_zip.xml all`
 
 ### （六）试跑第一个例子
 1. 进入/build/bin/main路径下：`$	cd build/bin/main`
 2. 运行第一个例子：`$	sudo ant -f runexample.xml -Dnumber=1`
     第一次build failed了：  
-![fig6](https://github.com/liaoyaoya/ES2016_14353173/tree/master/img/fig6.png)  
+![fig6](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig6.png)  
     解决方法：因为安装了多个版本的JAVA，需要设置一下JAVA的环境变量`$	sudo update-alternatives --config java`  
 ![fig7](./fig7.png)  
     然后选择对应的java-z-openjdk-amd64那一项，即是上图中选项1那一项。再运行一次`$	sudo ant -f runexample.xml -Dnumber=1`
     BUILD SUCCESSFUL结果图如下：  
-![fig8](https://github.com/liaoyaoya/ES2016_14353173/tree/master/img/fig8.png)
+![fig8](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig8.png)
 3. 在build/bin/main/example1文件夹中有一个example1.dot文件，双击点开得到下图：  
-![dot](https://github.com/liaoyaoya/ES2016_14353173/tree/master/img/dot.PNG)
+![dot](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/dot.PNG)
 
 
 ## 三、实验感想与心得
