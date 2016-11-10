@@ -1,4 +1,5 @@
 # Lab4: 死锁
+*14353173  廖瑶雅*
 ## 一、实验结果图
 ![fig1](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/deadlock.png)  
 由上图可以看出，当跑到第8次就产生了死锁，无法再跑下去。
