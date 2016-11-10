@@ -73,7 +73,7 @@ sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip
     第一次build failed了：  
 ![fig6](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig6.png)  
     解决方法：因为安装了多个版本的JAVA，需要设置一下JAVA的环境变量`$	sudo update-alternatives --config java`  
-![fig7](./fig7.png)  
+![fig7](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig7.png)  
     然后选择对应的java-z-openjdk-amd64那一项，即是上图中选项1那一项。再运行一次`$	sudo ant -f runexample.xml -Dnumber=1`
     BUILD SUCCESSFUL结果图如下：  
 ![fig8](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/fig8.png)
