@@ -9,7 +9,7 @@
 1. 在square.c文件中的square_fire信号处理函数，读入输入端信号i，原来是将其平方后写出到输出端，重复length次后停止。因为要求输出三次方数所以就把原来的`i=i*i;` 变成了三个i相乘即可：`i=i*i*i;`  
     实验截图如下：  
      ![fig2](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/example1_square.png)
-2. 重新编译运行example1
+2. 重新编译运行example1  
     ```    
 	$ sudo ant -f build_zip.xml all
     $ sudo ant –f runexample.xml –Dnumber=1
@@ -28,12 +28,12 @@
  实验截图如下：  
  ![fig5](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/example2_xml.png)
 
-2. 重新编译运行example1
+2. 重新编译运行example2
     ```    
 	$ sudo ant -f build_zip.xml all
     $ sudo ant –f runexample.xml –Dnumber=2
     ```
-3. example1运行后的结果如下图所示:    
+3. example2运行后的结果如下图所示:    
    ![fig6](https://github.com/liaoyaoya/ES2016_14353173/blob/master/img/example2.png)  
    从上到下0~19的四次方数，因为这是两个square模块迭代得到的值，一个square是`i=i*i`，那么两个square迭代后就会使`i=i^4`,如果是原来的三个square模块结果就会使`i=i^8`
 ## 三、实验感想与心得
