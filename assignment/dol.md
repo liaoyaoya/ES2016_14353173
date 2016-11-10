@@ -1,42 +1,44 @@
-# Lab2: DOLÊµÀý·ÖÎöÓë±à³Ì
-## Ò»¡¢Example1 µÄÐÞ¸Ä
-### £¨Ò»£©ÊµÑéÈÎÎñ
-ÐÞ¸Äexample1£¬Ê¹ÆäÊä³öÈý´Î·½Êý¡£
-### £¨¶þ£©ÐÞ¸ÄÍêµÃµ½µÄexample1.dot½ØÍ¼
+# Lab2: DOLå®žä¾‹åˆ†æžä¸Žç¼–ç¨‹
+## ä¸€ã€Example1 çš„ä¿®æ”¹
+### ï¼ˆä¸€ï¼‰å®žéªŒä»»åŠ¡
+ä¿®æ”¹example1ï¼Œä½¿å…¶è¾“å‡ºä¸‰æ¬¡æ–¹æ•°ã€‚
+### ï¼ˆäºŒï¼‰ä¿®æ”¹å®Œå¾—åˆ°çš„example1.dotæˆªå›¾
 ![fig1](./example1_dot.png)
-ÉÏÍ¼°üº¬ÁËÉú²úÕßgenerator£¬Æ½·½Ä£¿é£¨square£©ºÍÏû·ÑÕß£¨consumer£©Èý¸ö¿ò£¬»¹ÓÐC1ºÍC2Á½ÌõÏß¡£±¾´ÎÊµÑéÖ÷ÒªÐÞ¸ÄµÄÊÇÆ½·½Ä£¿éµÄÄÚÈÝ£¬µ«ÒòÎªÃ»ÓÐ¸Ä±äÃû×Ö£¬ËùÒÔÐÞ¸ÄÇ°ºóµÄdotÍ¼ÊÇÒ»ÖÂµÄ¡£
-### £¨Èý£©ÊµÑé¹ý³Ì
-1. ÔÚsquare.cÎÄ¼þÖÐµÄsquare_fireÐÅºÅ´¦Àíº¯Êý£¬¶ÁÈëÊäÈë¶ËÐÅºÅi£¬Ô­À´ÊÇ½«ÆäÆ½·½ºóÐ´³öµ½Êä³ö¶Ë£¬ÖØ¸´length´ÎºóÍ£Ö¹¡£ÒòÎªÒªÇóÊä³öÈý´Î·½ÊýËùÒÔ¾Í°ÑÔ­À´µÄ`i=i*i;` ±ä³ÉÁËÈý¸öiÏà³Ë¼´¿É£º`i=i*i*i;`
- ÊµÑé½ØÍ¼ÈçÏÂ£º
+ä¸Šå›¾åŒ…å«äº†ç”Ÿäº§è€…generatorï¼Œå¹³æ–¹æ¨¡å—ï¼ˆsquareï¼‰å’Œæ¶ˆè´¹è€…ï¼ˆconsumerï¼‰ä¸‰ä¸ªæ¡†ï¼Œè¿˜æœ‰C1å’ŒC2ä¸¤æ¡çº¿ã€‚æœ¬æ¬¡å®žéªŒä¸»è¦ä¿®æ”¹çš„æ˜¯å¹³æ–¹æ¨¡å—çš„å†…å®¹ï¼Œä½†å› ä¸ºæ²¡æœ‰æ”¹å˜åå­—ï¼Œæ‰€ä»¥ä¿®æ”¹å‰åŽçš„dotå›¾æ˜¯ä¸€è‡´çš„ã€‚
+### ï¼ˆä¸‰ï¼‰å®žéªŒè¿‡ç¨‹
+1. åœ¨square.cæ–‡ä»¶ä¸­çš„square_fireä¿¡å·å¤„ç†å‡½æ•°ï¼Œè¯»å…¥è¾“å…¥ç«¯ä¿¡å·iï¼ŒåŽŸæ¥æ˜¯å°†å…¶å¹³æ–¹åŽå†™å‡ºåˆ°è¾“å‡ºç«¯ï¼Œé‡å¤lengthæ¬¡åŽåœæ­¢ã€‚å› ä¸ºè¦æ±‚è¾“å‡ºä¸‰æ¬¡æ–¹æ•°æ‰€ä»¥å°±æŠŠåŽŸæ¥çš„`i=i*i;` å˜æˆäº†ä¸‰ä¸ªiç›¸ä¹˜å³å¯ï¼š`i=i*i*i;`
+ å®žéªŒæˆªå›¾å¦‚ä¸‹ï¼š
  ![fig2](./example1_square.png)
-2. ÖØÐÂ±àÒëÔËÐÐexample1
-    ```    $ sudo ant -f build_zip.xml all
-    $ sudo ant ¨Cf runexample.xml ¨CDnumber=1
+2. é‡æ–°ç¼–è¯‘è¿è¡Œexample1
+    ```    
+	$ sudo ant -f build_zip.xml all
+    $ sudo ant â€“f runexample.xml â€“Dnumber=1
     ```
-3. example1ÔËÐÐºóµÄ½á¹ûÈçÏÂÍ¼ËùÊ¾:  
+3. example1è¿è¡ŒåŽçš„ç»“æžœå¦‚ä¸‹å›¾æ‰€ç¤º:  
    ![fig3](./example1.png)
-	´ÓÉÏµ½ÏÂ0~19µÄÈý´Î·½Êý¡£ 
-## ¶þ¡¢Example2 µÄÐÞ¸Ä
-### £¨Ò»£©ÊµÑéÈÎÎñ
-ÐÞ¸Äexample2£¬ÈÃ3¸ösquareÄ£¿é±ä³É2¸ö
-### £¨¶þ£©ÐÞ¸ÄÍêµÃµ½µÄexample2.dot½ØÍ¼
+	ä»Žä¸Šåˆ°ä¸‹0~19çš„ä¸‰æ¬¡æ–¹æ•°ã€‚ 
+## äºŒã€Example2 çš„ä¿®æ”¹
+### ï¼ˆä¸€ï¼‰å®žéªŒä»»åŠ¡
+ä¿®æ”¹example2ï¼Œè®©3ä¸ªsquareæ¨¡å—å˜æˆ2ä¸ª
+### ï¼ˆäºŒï¼‰ä¿®æ”¹å®Œå¾—åˆ°çš„example2.dotæˆªå›¾
 ![fig4](./example2_dot.png)
-ÉÏÍ¼°üº¬ÁËÉú²úÕßgenerator£¬Á½¸öÆ½·½Ä£¿é£¨square£©ºÍÏû·ÑÕß£¨consumer£©ËÄ¸ö¿ò£¬»¹ÓÐC2_0, C2_1 ºÍ C2_2 ÈýÌõÏß¡£±¾´ÎÊµÑéÖ÷ÒªÐÞ¸ÄµÄÊÇsquareÄ£¿éµÄÊýÁ¿£¬´ÓÈý¸ö±ä³ÉÁ½¸ö¡£
-### £¨Èý£©ÊµÑé¹ý³Ì
-1. example2.xmlÎÄ¼þÖÐ¶¨ÁËµü´úÊý£¬ËùÒÔÊµÑéÖÐ¾ÍÓ¦¸Ã°Ñ¸ÃÎÄ¼þÏÂµÄ`<variable value="3" name="N">` ¸Ä³É`<variable value="2" name="N">` £¬ÒòÎªÕâ¸övalueµÄÖµ¾Í»áÊÇsquareÄ£¿éµÄµü´úÊý¡£
- ÊµÑé½ØÍ¼ÈçÏÂ£º
+ä¸Šå›¾åŒ…å«äº†ç”Ÿäº§è€…generatorï¼Œä¸¤ä¸ªå¹³æ–¹æ¨¡å—ï¼ˆsquareï¼‰å’Œæ¶ˆè´¹è€…ï¼ˆconsumerï¼‰å››ä¸ªæ¡†ï¼Œè¿˜æœ‰C2_0, C2_1 å’Œ C2_2 ä¸‰æ¡çº¿ã€‚æœ¬æ¬¡å®žéªŒä¸»è¦ä¿®æ”¹çš„æ˜¯squareæ¨¡å—çš„æ•°é‡ï¼Œä»Žä¸‰ä¸ªå˜æˆä¸¤ä¸ªã€‚
+### ï¼ˆä¸‰ï¼‰å®žéªŒè¿‡ç¨‹
+1. example2.xmlæ–‡ä»¶ä¸­å®šäº†è¿­ä»£æ•°ï¼Œæ‰€ä»¥å®žéªŒä¸­å°±åº”è¯¥æŠŠè¯¥æ–‡ä»¶ä¸‹çš„`<variable value="3" name="N">` æ”¹æˆ`<variable value="2" name="N">` ï¼Œå› ä¸ºè¿™ä¸ªvalueçš„å€¼å°±ä¼šæ˜¯squareæ¨¡å—çš„è¿­ä»£æ•°ã€‚
+ å®žéªŒæˆªå›¾å¦‚ä¸‹ï¼š
  ![fig5](./example2_xml.png)
 
-2. ÖØÐÂ±àÒëÔËÐÐexample1
-    ```    $ sudo ant -f build_zip.xml all
-     $ sudo ant ¨Cf runexample.xml ¨CDnumber=2
+2. é‡æ–°ç¼–è¯‘è¿è¡Œexample1
+    ```    
+	$ sudo ant -f build_zip.xml all
+    $ sudo ant â€“f runexample.xml â€“Dnumber=2
     ```
-3. example1ÔËÐÐºóµÄ½á¹ûÈçÏÂÍ¼ËùÊ¾:  
+3. example1è¿è¡ŒåŽçš„ç»“æžœå¦‚ä¸‹å›¾æ‰€ç¤º:  
    ![Alt text](./example2.png)
-   ´ÓÉÏµ½ÏÂ0~19µÄËÄ´Î·½Êý£¬ÒòÎªÕâÊÇÁ½¸ösquareÄ£¿éµü´úµÃµ½µÄÖµ£¬Ò»¸ösquareÊÇ`i=i*i`£¬ÄÇÃ´Á½¸ösquareµü´úºó¾Í»áÊ¹`i=i^4`,Èç¹ûÊÇÔ­À´µÄÈý¸ösquareÄ£¿é½á¹û¾Í»áÊ¹`i=i^8`
-## Èý¡¢ÊµÑé¸ÐÏëÓëÐÄµÃ
-1. exampleÖÐ¸÷ÎÄ¼þµÄº¬ÒåÈçÏÂ£º
-    srcÎÄ¼þ¼Ð£º¸÷½ø³Ì£¨Éú²úÕß£¬Ïû·ÑÕß£¬´¦ÀíÄ£¿éµÈ£©µÄ¹¦ÄÜ¶¨Òå
-    example1.xml£ºÏµÍ³¼Ü¹¹¼´Ä£¿éÁ¬½Ó·½Ê½¶¨Òå¡£
-2. ËùÒÔ±¾´ÎÊµÑéÖ÷ÒªÊÇÒªÀí½âÉú²úÕß¸ø´¦ÀíÄ£¿éÊäÈëÊý¾Ý£¬È»ºó´¦ÀíÄ£¿é¸ù¾Ý¶¨ÒåµÄÄÚÈÝ¹¦ÄÜÀ´´¦ÀíÊý¾ÝºóÍùÏÂÒ»¸öÄ£¿éÊä³ö£¬×îºóÏû·ÑÕß»ñµÃµÄ¾ÍÊÇ¾­¹ýËùÓÐ´¦ÀíÄ£¿é´¦ÀíµÄÊý¾ÝÁË¡£
-3. ¶ÔÓÚ´¦ÀíÄ£¿é£¬Ã¿µü´úÒ»´Î£¬¾Í»áÏàµ±ÓÚÔö¼ÓÒ»¸öÍ¬ÑùµÄÄ£¿é£¬Ò²¾ÍÊÇ°ÑÊý¾ÝÔÙÓÃÍ¬ÑùµÄ·½·¨´¦ÀíÒ»±é¡£
+   ä»Žä¸Šåˆ°ä¸‹0~19çš„å››æ¬¡æ–¹æ•°ï¼Œå› ä¸ºè¿™æ˜¯ä¸¤ä¸ªsquareæ¨¡å—è¿­ä»£å¾—åˆ°çš„å€¼ï¼Œä¸€ä¸ªsquareæ˜¯`i=i*i`ï¼Œé‚£ä¹ˆä¸¤ä¸ªsquareè¿­ä»£åŽå°±ä¼šä½¿`i=i^4`,å¦‚æžœæ˜¯åŽŸæ¥çš„ä¸‰ä¸ªsquareæ¨¡å—ç»“æžœå°±ä¼šä½¿`i=i^8`
+## ä¸‰ã€å®žéªŒæ„Ÿæƒ³ä¸Žå¿ƒå¾—
+1. exampleä¸­å„æ–‡ä»¶çš„å«ä¹‰å¦‚ä¸‹ï¼š
+    srcæ–‡ä»¶å¤¹ï¼šå„è¿›ç¨‹ï¼ˆç”Ÿäº§è€…ï¼Œæ¶ˆè´¹è€…ï¼Œå¤„ç†æ¨¡å—ç­‰ï¼‰çš„åŠŸèƒ½å®šä¹‰
+    example1.xmlï¼šç³»ç»Ÿæž¶æž„å³æ¨¡å—è¿žæŽ¥æ–¹å¼å®šä¹‰ã€‚
+2. æ‰€ä»¥æœ¬æ¬¡å®žéªŒä¸»è¦æ˜¯è¦ç†è§£ç”Ÿäº§è€…ç»™å¤„ç†æ¨¡å—è¾“å…¥æ•°æ®ï¼Œç„¶åŽå¤„ç†æ¨¡å—æ ¹æ®å®šä¹‰çš„å†…å®¹åŠŸèƒ½æ¥å¤„ç†æ•°æ®åŽå¾€ä¸‹ä¸€ä¸ªæ¨¡å—è¾“å‡ºï¼Œæœ€åŽæ¶ˆè´¹è€…èŽ·å¾—çš„å°±æ˜¯ç»è¿‡æ‰€æœ‰å¤„ç†æ¨¡å—å¤„ç†çš„æ•°æ®äº†ã€‚
+3. å¯¹äºŽå¤„ç†æ¨¡å—ï¼Œæ¯è¿­ä»£ä¸€æ¬¡ï¼Œå°±ä¼šç›¸å½“äºŽå¢žåŠ ä¸€ä¸ªåŒæ ·çš„æ¨¡å—ï¼Œä¹Ÿå°±æ˜¯æŠŠæ•°æ®å†ç”¨åŒæ ·çš„æ–¹æ³•å¤„ç†ä¸€éã€‚
